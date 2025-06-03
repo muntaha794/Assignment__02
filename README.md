@@ -7,7 +7,7 @@ Your mission is to build an **attractive & Ecommerce Landing Page** for:  🍃 *
 
 ---
 
-## 🧠 Marking System — Total: 60 Marks ( 50 - Main  + 10 - Challenge ) 
+## 🧠 Marking System — Total: 60 Marks ( 50 : Main  + 10 : Challenge ) 
 
 
 ---
@@ -59,5 +59,4 @@ To help you craft the perfect UI, we’ve provided:
 
 ---
 
-> 💬 *“Good code is its own best documentation.”*  
-Let your code speak your passion ❤️‍🔥  
+> 💬 *“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”* <br/>  - Martin Fowler 🔥<br/>   Chief Scientist at ThoughtWorks
