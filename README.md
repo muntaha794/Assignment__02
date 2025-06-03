@@ -26,13 +26,13 @@ To help you craft the perfect UI, we’ve provided:
 - 📁 **Figma File** – Design inspiration 💡  
 - 🖼️ **Images** – Assets for your visuals 🖌️  
 
-💾 **Download the resources** & get started on your career-launching mission! 🚀
+💾 **Download the resources** & get started  🚀
 
 ---
 
 ## ⏰ Deadline  
 
-📅 **Assignment-01 Deadline:**  
+📅 **Assignment-02 Deadline:**  
 🕛 **June 04,  11:59 PM** (Don't be late 🚩)
 
 ---
