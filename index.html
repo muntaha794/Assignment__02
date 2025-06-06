@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora&display=swap"
+      rel="stylesheet"
+    />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="navbar bg-base-100 mt-4 px-4">
+      <div class="navbar-start lg:hidden w-full">
+        <div class="dropdown">
+          <div
+            class="flex items-center justify-between px-4 border-b-1 border-green-600 lg:border-none mx-auto"
+            style="max-width: 390px; width: 100%"
+          >
+            <img
+              src="/natures-platter/assets/logo-white.png"
+              alt="Logo"
+              class="block lg:hidden h-6 w-auto"
+            />
+            <!-- Burger -->
+            <div class="flex-none">
+              <button class="btn btn-square btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block h-5 w-5 stroke-current"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 hidden-390"
+          >
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Desktop-->
+      <div class="navbar-start hidden lg:flex">
+        <img
+          src="/natures-platter/assets/logo-green.png"
+          alt="Logo"
+          class="hidden lg:block"
+        />
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li style="font-size: 20px"><a>Product</a></li>
+          <li style="font-size: 20px"><a>Services</a></li>
+          <li style="font-size: 20px"><a>Contact us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <div style="margin-right: 20px">
+          <img src="/natures-platter/assets/Frame 7.png" alt="" />
+        </div>
+        <a
+          class="btn"
+          style="
+            background-color: #ffffff;
+            border-color: #179800;
+            width: 117px;
+            height: 45px;
+            border-radius: 8px;
+            margin-right: 10px;
+            font-size: 15px;
+          "
+          >Login</a
+        >
+        <a
+          class="btn"
+          style="
+            background-color: #179800;
+            width: 130px;
+            height: 45px;
+            border-radius: 8px;
+            color: #ffffff;
+            border: none;
+            margin-right: 15px;
+            font-size: 15px;
+          "
+          >Register</a
+        >
+      </div>
+    </div>
+    <div>
+      <h1 class="hero-heading">
+        Freshness <span style="color: #179800">You Can <br />Count</span> On,
+        Prices You'll Love!
+      </h1>
+      <p class="hero-subtext">
+        Shop your daily essentials at unbeatable prices. From fresh produce to
+        pantry <br />staples, we've got you covered every day!
+      </p>
+    </div>
+    <div class="flex justify-center">
+      <img
+        src="/natures-platter/assets/hero-img.png"
+        alt=""
+        class="w-full max-w-[388px] h-[310px] object-cover md:max-w-none md:h-auto"
+      />
+    </div>
+    <!-- cards -->
+    <div class="services-container" style="margin: 20px; padding: 40px">
+      <h1
+        style="
+          color: #179800;
+          font-weight: bold;
+          font-size: 30px;
+          margin-left: 25px;
+          margin-bottom: 20px;
+        "
+      >
+        Services
+      </h1>
+      <div
+        class="card-container"
+        style="display: flex; gap: 20px; justify-content: center"
+      >
+        <div class="card bg-[#EFEBE3] w-96 shadow-sm p-8">
+          <figure>
+            <img src="/natures-platter/assets/support.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center">24/7 Services</h2>
+            <p style="text-align: center; font-size: 15px">
+              Customers to place orders at any time of day or night and often
+              receive deliveries within a few minutes
+            </p>
+          </div>
+        </div>
+        <div class="card bg-[#EFEBE3] w-96 shadow-sm p-8">
+          <figure>
+            <img src="/natures-platter/assets/fast-delivery.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center">Fast Delivery</h2>
+            <p style="text-align: center; font-size: 15px">
+              These services are particularly beneficial for individuals with
+              mobility issues, those living in remote areas
+            </p>
+          </div>
+        </div>
+        <div class="card bg-[#EFEBE3] w-96 shadow-sm p-8">
+          <figure>
+            <img
+              style="border-radius: 20px"
+              src="/natures-platter/assets/healthy-100.png"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center">Healthy Products</h2>
+            <p style="text-align: center; font-size: 15px">
+              Customers rely on fresh produce, which can sometimes be a concern
+              compared to picking items oneself
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+    class="wrap w-screen bg-[#efebe3] my-5 px-10 py-10 relative"
+      style="
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+      "
+    >
+      <h1
+      class="ht1"
+        style="
+          color: #179800;
+          font-weight: bold;
+          font-size: 30px;
+          margin-left: 70px;
+          margin-bottom: 20px;
+          
+        "
+      >
+        Popular Products
+      </h1>
+      <div class="product-wrapper">
+        <!-- small cards -->
+        <div
+          class="row-style flex flex-wrap gap-4 justify-center"
+          style="
+            display: flex;
+            gap: 70px;
+            padding: 10px;
+            justify-content: center;
+          "
+        >
+          <div class="row-style flex flex-col space-y-4">  
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4 max-[390px]:m-0"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-onion.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800">Onion 1 KG</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4 max-[390px]:m-0"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-potato.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800">Potato 1 KG</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4 max-[390px]:m-0"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-tomato.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800">Tomato 1 KG</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="row-style flex flex-col space-y-4">
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4 max-[390px]:m-0"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-tomato.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800"> 1 KG</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4 max-[390px]:m-0"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-potato.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800">Onion 1 KG</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4 max-[390px]:m-0"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-onion.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800">Onion 1 KG</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="row-style flex flex-col space-y-4">
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-potato.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800">Potato 1 KG</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-onion.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800">Onion 1 KG</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4 hidden-390"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-onion.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800">Onion 1 KG</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="row-style flex flex-col space-y-4">
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4 hidden-390"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-onion.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800">Onion 1 KG</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4 hidden-390"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-potato.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800">Potato</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+            <div
+              class="product-card bg-white rounded-xl shadow-md p-2 w-60 flex items-center space-x-4 hidden-390"
+            >
+              <div class="bg-[#f4f0ea] p-2 rounded-lg">
+                <img
+                  src="/natures-platter/assets/product-tomato.png"
+                  alt="Onion"
+                  class="w-16 h-16 object-contain"
+                />
+              </div>
+              <div class="flex flex-col space-y-1">
+                <div class="flex items-center text-sm text-gray-600">
+                  <svg
+                    class="w-4 h-4 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.956a1 1 0 00.95.69h4.153c.969 0 1.371 1.24.588 1.81l-3.36 2.445a1 1 0 00-.364 1.118l1.287 3.957c.3.921-.755 1.688-1.54 1.118L10 13.347l-3.36 2.445c-.784.57-1.838-.197-1.539-1.118l1.287-3.957a1 1 0 00-.364-1.118L2.663 9.383c-.783-.57-.38-1.81.588-1.81h4.153a1 1 0 00.95-.69l1.286-3.956z"
+                    />
+                  </svg>
+                  <span>4.5</span>
+                </div>
+                <div class="text-sm font-semibold text-800">Tomato 1 KG</div>
+                <div class="text-sm font-semibold text-black">$39.99</div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      
+        </div> 
+      </div>
+    </div>
+    <!-- rice -->
+        <div class="services-container" style="margin: 20px; padding: 40px">
+          <h1
+            style="
+              color: #179800;
+              font-weight: bold;
+              font-size: 30px;
+              margin-left: 25px;
+              margin-bottom: 20px;
+            "
+          >
+          Arrival & Offers
+          </div>
+          <div 
+          class="offers-wrapper"
+          style="display: flex; gap: 20px; justify-content: center;">
+            <div
+             class="offer-card"
+              style="
+                width: 780px;
+                height: 344px;
+                background-color: #115414;
+                border-radius: 12px;
+              "
+            >
+              <div class="offer-content"
+              style="display: flex;">
+              <div 
+              class="tight"
+              style="padding: 40px;">
+                  <img 
+                  class="logo"
+                  style="width: 246px;" src="/natures-platter/assets/dawat-logo.png" alt="">
+                  <button 
+                  class="btn"
+                  style="padding: 15px 40px; 
+                  color: #ffffff; 
+                  background: #63B76D; 
+                  border-radius: 8px;
+                  margin-top: 20px;
+                  font-family: 'Poppins', sans-serif;
+                  font-size: 20px;
+                  border: none;
+                  "
+                  >
+                  Cook Exotic Dishes</button>
+                  <h1 
+                
+                  style="color: #ffffff;
+                  font-size: 39px;
+                  font-weight: lighter;
+                  font-family: 'Poppins', sans-serif;
+                  margin-top: 20px;
+                  "
+                  >UP to <span style="font-weight: 900;">20% OFF</span></h1>
+              </div>
+              <img class="product" style="margin-top: 30px; margin-left: 40px;" src="/natures-platter/assets/product-dawat.png" alt="">
+            </div>
+            </div>
+            <div
+              class="offer-card2"
+              style="
+                width: 520px;
+                height: 344px;
+                background-color: #102861;
+                border-radius: 12px;
+              "
+            >
+            <div class="offer-content2" style="display: flex;">
+              <div class="text-content" style="padding: 30px;">
+                  <img class="logo2" style="width: 98px;" src="/natures-platter/assets/indiagate-logo.png" alt="">
+                  <button class="btn2"
+                  style="padding: 15px 40px; 
+                  color: #ffffff; 
+                  background: #2A4D97; 
+                  border-radius: 8px;
+                  margin-top: 20px;
+                  font-family: 'Poppins', sans-serif;
+                  font-size: 20px;
+                  "
+                  >
+                  World's No.1 Rice</button>
+                  <h1 
+                  style="color: #ffffff;
+                  font-size: 39px;
+                  font-weight: lighter;
+                  font-family: 'Poppins', sans-serif;
+                  margin-top: 20px;
+                  "
+                  >UP to <span style="font-weight: 900;">40% OFF</span></h1>
+              </div>
+              <img class="product-pic" style="width: 175px; height: 287px; margin-top: 40px;" src="/natures-platter/assets/product-indiagate.png" alt="">
+            </div>
+            </div>
+          </div>
+<div 
+  class="offers-wrapper"
+  style="display: flex; gap: 20px; justify-content: center;">
+<div
+  class="offer-card"
+  style="
+  width: 780px;
+  height: 344px;
+  background-color: #EFEBE3;
+  border-radius: 12px;
+  display: flex;
+  padding: 30px;
+  margin-top: 50px;
+  "
+>
+<img src="/natures-platter/assets/fruit-basket.png" alt="">
+<form style="padding: 30px;">
+    <h6 style="color: black; font-weight: bolder; font-size:20px;">Get Grocery News!</h6>
+      <label style="font-size:15px;">Exclusive training tips, ticks, product deals and more.</label>
+      <div class="join">
+        <input
+          style="margin-top: 10px; width:300px;"
+          type="text"
+          placeholder="Enter email"
+          class="input input-bordered join-item" />
+      </div>
+   <button class="btn btn-primary join-item mt-5 bg-[#179800] border-[#179800]">Subscribe</button>
+  </form>
+  </div>
+</div>
+  </body>
+  <footer class="footer flex flex-col sm:flex-row sm:gap-20 gap-6  sm:items-start text-center sm:text-left bg-neutral text-neutral-content p-10" 
+  style="background: #179800; justify-content: space-between;"> 
+  <aside>
+    <div>
+      <img src="/natures-platter/assets/logo-white.png" alt="">
+      <label style="font-size:15px; color: #ffffff;">Discover a world of treats, toys, and <br>essentials handpicked for your furry <br>friends</label>
+    </div>
+  </aside>
+  <div style="padding: 30px; margin-left: 20px;">
+      <a>Product</a>
+      <a>Services</a>
+      <a>Contact us</a>
+  </div>
+  <nav>
+    <h6 class="footer-title">Follow Us</h6>
+    <div class="grid grid-flow-col gap-4">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+       <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+    </svg>
+      <i class="fa fa-youtube-play" style="font-size:24px"></i>
+      <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+      <i class="fa fa-instagram" style="font-size:24px"></i>
+    </div>
+  </nav>
+</footer>
+</html>
+
